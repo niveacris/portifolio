@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio de Nivea Cris | Desenvolvedora Web</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Portfólio profissional de Nivea Cris - desenvolvedora apaixonada por tecnologia e soluções modernas.">
+  <meta name="keywords" content="Nivea Cris, portfólio, desenvolvedora, projetos, tecnologia, web, design, programação, frontend, backend">
+  <meta name="author" content="Nivea Cris">
+  <meta property="og:title" content="Portfólio de Nivea Cris">
+  <meta property="og:description" content="Conheça os projetos e habilidades de Nivea Cris, desenvolvedora web moderna e criativa.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://niveacris.vercel.app">
+  <meta property="og:image" content="https://niveacris.vercel.app/assets/preview.png">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Dark Mode Automático -->
+  <style>
+    @media (prefers-color-scheme: dark) {
+      body { background-color: #121212; color: #f5f5f5; }
+      header, footer { background-color: #1e1e1e; color: #f5f5f5; }
+      section { background-color: #1a1a1a; }
+      input, textarea {
+        background-color: #2a2a2a;
+        color: #f5f5f5;
+        border: 1px solid #444;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-white shadow p-6 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">Nivea Cris</h1>
+    <nav>
+      <a href="#projetos" class="mx-2 text-gray-700 hover:text-blue-600">Projetos</a>
+      <a href="#contato" class="mx-2 text-gray-700 hover:text-blue-600">Contato</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="text-center py-20 bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+    <h2 class="text-4xl font-bold mb-4">Bem-vindo ao meu Portfólio</h2>
+    <p class="text-lg">Desenvolvedora apaixonada por criar soluções modernas e seguras.</p>
+  </section>
+
+  <!-- Projetos -->
+  <section id="projetos" class="p-10">
+    <h2 class="text-3xl font-semibold mb-6 text-center">Meus Projetos</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white p-6 shadow rounded hover:shadow-lg transition">
+        <h3 class="font-bold text-xl mb-2">Projeto 1</h3>
+        <p class="text-gray-600">Descrição breve do projeto.</p>
+      </div>
+      <div class="bg-white p-6 shadow rounded hover:shadow-lg transition">
+        <h3 class="font-bold text-xl mb-2">Projeto 2</h3>
+        <p class="text-gray-600">Descrição breve do projeto.</p>
+      </div>
+      <div class="bg-white p-6 shadow rounded hover:shadow-lg transition">
+        <h3 class="font-bold text-xl mb-2">Projeto 3</h3>
+        <p class="text-gray-600">Descrição breve do projeto.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="p-10 bg-gray-200">
+    <h2 class="text-3xl font-semibold mb-6 text-center">Entre em Contato</h2>
+    <form class="max-w-lg mx-auto bg-white p-6 shadow rounded">
+      <input type="text" placeholder="Seu nome" class="w-full p-3 mb-4 border rounded" required>
+      <input type="email" placeholder="Seu e-mail" class="w-full p-3 mb-4 border rounded" required>
+      <textarea placeholder="Sua mensagem" class="w-full p-3 mb-4 border rounded" rows="5" required></textarea>
+      <button type="submit" class="w-full bg-blue-600 text-white p-3 rounded hover:bg-blue-700 transition">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white p-6 text-center">
+    <p>&copy; 2026 Nivea Cris. Todos os direitos reservados.</p>
+    <p>
+      <a href="https://github.com/niveacris" class="text-blue-400 hover:underline">GitHub</a> |
+      <a href="https://linkedin.com/in/niveacris" class="text-blue-400 hover:underline">LinkedIn</a>
+    </p>
+  </footer>
+
+</body>
+</html>
