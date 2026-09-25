@@ -8,7 +8,7 @@
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #F5F1EB;
+      background-color: #CFC9C0; /* cor de fundo atualizada */
       color: #4B2E2E;
       margin: 0;
       transition: all 0.3s ease;
@@ -60,7 +60,7 @@
     }
     button:hover {
       background-color: #4B2E2E;
-      color: #F5F1EB;
+      color: #CFC9C0; /* contraste com fundo */
     }
 
     /* Tema escuro */
@@ -98,4 +98,109 @@
       <a href="#sobre">Sobre mim</a>
       <a href="#servicos">Serviços</a>
       <a href="#projetos">Projetos</a>
-      <a href="#orcamento">
+      <a href="#orcamento">Orçamento</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <div style="margin-top:15px;">
+      <button onclick="toggleTheme()">Alternar Tema 🌞🌙</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section>
+    <h2>Bem-vindo ao meu Portfólio</h2>
+    <p>Web Designer & Developer criando soluções modernas e sofisticadas.</p>
+  </section>
+
+  <!-- Sobre mim -->
+  <section id="sobre">
+    <h2 style="color:#D4AF37;">Sobre mim</h2>
+    <div style="max-width:800px; margin:auto; line-height:1.6;">
+      <p>
+        Sou <strong>Nivea Oliveira</strong>, Web Designer & Developer apaixonada por criar experiências digitais
+        que unem estética e funcionalidade. Meu foco é transformar ideias em projetos sofisticados, com
+        atenção aos detalhes e identidade visual única.
+      </p>
+      <p>
+        Trabalho com <span style="color:#D4AF37; font-weight:600;">design responsivo</span>, 
+        <span style="color:#D4AF37; font-weight:600;">desenvolvimento seguro</span> e 
+        <span style="color:#D4AF37; font-weight:600;">soluções personalizadas</span> para cada cliente.
+      </p>
+      <p>
+        Quando não estou desenvolvendo, estou explorando novas tendências de design e tecnologia,
+        sempre buscando inovação para entregar resultados que encantem.
+      </p>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section id="servicos">
+    <h2 style="color:#D4AF37;">Serviços</h2>
+    <div class="grid grid-3" style="max-width:1000px; margin:auto;">
+      <div class="card">
+        <h3>Web Design</h3>
+        <p>Interfaces modernas e responsivas, alinhadas à identidade visual da sua marca.</p>
+      </div>
+      <div class="card">
+        <h3>Desenvolvimento</h3>
+        <p>Sites e sistemas seguros, escaláveis e otimizados para performance e SEO.</p>
+      </div>
+      <div class="card">
+        <h3>Consultoria</h3>
+        <p>Orientação estratégica para transformar ideias em soluções digitais de impacto.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projetos -->
+  <section id="projetos">
+    <h2 style="color:#D4AF37;">Meus Projetos</h2>
+    <div class="grid grid-3" style="max-width:1000px; margin:auto;">
+      <div class="card">
+        <h3>Projeto 1</h3>
+        <p>Descrição breve do projeto.</p>
+      </div>
+      <div class="card">
+        <h3>Projeto 2</h3>
+        <p>Descrição breve do projeto.</p>
+      </div>
+      <div class="card">
+        <h3>Projeto 3</h3>
+        <p>Descrição breve do projeto.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Orçamento -->
+  <section id="orcamento">
+    <h2 style="color:#D4AF37;">Solicite um Orçamento</h2>
+    <form style="max-width:600px; margin:auto;" class="card">
+      <input type="text" name="nome" placeholder="Seu nome" style="width:100%; padding:10px; margin-bottom:10px;" required>
+      <input type="email" name="email" placeholder="Seu e-mail" style="width:100%; padding:10px; margin-bottom:10px;" required>
+      <input type="tel" name="telefone" placeholder="Seu telefone" style="width:100%; padding:10px; margin-bottom:10px;" required>
+      <textarea name="mensagem" placeholder="Descreva seu projeto" rows="5" style="width:100%; padding:10px; margin-bottom:10px;" required></textarea>
+      <button type="submit">Enviar Solicitação</button>
+    </form>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato">
+    <h2 style="color:#D4AF37;">Contato</h2>
+    <div style="margin-bottom:20px;">
+      <a href="https://github.com/niveacris">GitHub</a> |
+      <a href="https://linkedin.com/in/niveaoliveira">LinkedIn</a> |
+      <a href="mailto:seuemail@exemplo.com">Email</a>
+    </div>
+    <form style="max-width:600px; margin:auto;" class="card">
+      <input type="text" name="nome" placeholder="Seu nome" style="width:100%; padding:10px; margin-bottom:10px;" required>
+      <input type="email" name="email" placeholder="Seu e-mail" style="width:100%; padding:10px; margin-bottom:10px;" required>
+      <textarea name="mensagem" placeholder="Sua mensagem" rows="5" style="width:100%; padding:10px; margin-bottom:10px;" required></textarea>
+      <button type="submit">Enviar Mensagem</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Nivea Cris. Todos os direitos reservados.</p>
+    <p>
+      <a href="https://github.com/niveacris">Git
