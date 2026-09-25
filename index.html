@@ -3,51 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio de Nivea Oliveira | Desenvolvedora Web</title>
-
-  <!-- SEO -->
-  <meta name="description" content="Portfólio profissional de Nivea Oliveira - desenvolvedora apaixonada por tecnologia e soluções modernas.">
-  <meta name="keywords" content="Nivea Oliveira, portfólio, desenvolvedora, projetos, tecnologia, web, design, programação, frontend, backend">
-  <meta name="author" content="Nivea Oliveira">
-
-  <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Dark Mode Automático -->
+  <title>Oliveira | Web Designer & Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <style>
-    @media (prefers-color-scheme: dark) {
-      body { background-color: #121212; color: #f5f5f5; }
-      header, footer { background-color: #1e1e1e; color: #f5f5f5; }
-      section { background-color: #1a1a1a; }
-      input, textarea {
-        background-color: #2a2a2a;
-        color: #f5f5f5;
-        border: 1px solid #444;
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #F5F1EB;
+      color: #4B2E2E;
+      margin: 0;
+      transition: all 0.3s ease;
+    }
+    header, footer {
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid #D4AF37;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #4B2E2E;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #D4AF37;
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+    }
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .grid {
+      display: grid;
+      gap: 20px;
+    }
+    @media(min-width:768px) {
+      .grid-3 {
+        grid-template-columns: repeat(3, 1fr);
       }
     }
+    .card {
+      padding: 20px;
+      border: 1px solid #D4AF37;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    button {
+      background-color: #D4AF37;
+      color: #4B2E2E;
+      padding: 10px 20px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    button:hover {
+      background-color: #4B2E2E;
+      color: #F5F1EB;
+    }
+
+    /* Tema escuro */
+    body.dark {
+      background-color: #4B2E2E;
+      color: #F5F1EB;
+    }
+    body.dark nav a {
+      color: #D4AF37;
+    }
+    body.dark nav a:hover {
+      color: #F5F1EB;
+    }
+    body.dark button {
+      background-color: #D4AF37;
+      color: #4B2E2E;
+    }
+    body.dark button:hover {
+      background-color: #F5F1EB;
+      color: #4B2E2E;
+    }
   </style>
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+    }
+  </script>
 </head>
-<body class="bg-[#E8B4B8] text-[#4B2E2E]">
+<body>
 
   <!-- Header -->
-  <header class="bg-[#4B2E2E] shadow p-8 text-center">
-  <!-- Logo centralizado -->
-  <img src="assets/logo.png" alt="Logo Oliveira" class="mx-auto h-20 mb-4">
-
-  <!-- Navegação abaixo do logo -->
-  <nav class="space-x-6 text-[#D4AF37] font-semibold">
-    <a href="#projetos" class="hover:text-white">Projetos</a>
-    <a href="#orcamento" class="hover:text-white">Orçamento</a>
-    <a href="#contato" class="hover:text-white">Contato</a>
-  </nav>
-</header>
-
-  <!-- Hero -->
-  <section class="text-center py-20 bg-gradient-to-r from-[#E8B4B8] to-[#D4AF37] text-[#4B2E2E]">
-    <h2 class="text-4xl font-bold mb-4">Bem-vindo ao meu Portfólio</h2>
-    <p class="text-lg">Desenvolvedora apaixonada por criar soluções modernas e seguras.</p>
-  </section>
-
-  <!-- Projetos -->
-  <section id="projetos" class="p-10">
-    <h2 class="text-3xl font-semibold mb-6 text-center text-[#4B2E2E]">Meus Projetos</h2>
+  <header>
+    <img src="assets/logo.png" alt="Logo Oliveira" style="height:80px; margin-bottom:10px;">
+    <nav>
+      <a href="#sobre">Sobre mim</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#orcamento">
